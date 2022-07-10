@@ -4,9 +4,23 @@ Uses clinical patient information to predict strokes
 # Data
 Data is from: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
 - 10 clinical features
+  - Gender, Age, Hypertension, Heart Disease, Marriage Status, Work Type, Residence Type, Average Glucose Level, BMI, Smoking Status
 - 1 binary target variable
+  - Stroke
 - 5110 observations
-- Class Imbalance: 7% of samples are positive for the target variable
+- Class Imbalance: 7% of samples are positive for having had a stroke
+
+# Insights
+![Age vs. Stroke History](age_stroke.png)
+
+Those who have had a stroke are ~26 years older than those who have not, on average.
+<br />
+<br />
+<br />
+
+![Marriage vs. Stroke History](marriage_stroke.png)
+
+Those who have been married are ~4x more likely to have had a stroke than those who have not been married, on average.
 
 # Final Model
 XGBClassifier with eta = 0.3, lambda = 1, max_depth = 5, and min_child_weight = 2
