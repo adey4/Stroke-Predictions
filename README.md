@@ -6,7 +6,7 @@ Data is from: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-data
 - 10 clinical features
 - 1 binary target variable
 - 5110 observations
-- Class Imbalance: 7% of the dataset has had a stroke before
+- Class Imbalance: 7% of samples are positive for the target variable
 
 # Final Model
 XGBClassifier with eta = 0.3, lambda = 1, max_depth = 5, and min_child_weight = 2
