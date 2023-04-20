@@ -1,5 +1,5 @@
 # Stroke-Predictions
-Uses clinical patient information to predict strokes
+XGBoost model to predict stroke risk from clinical patient information, aiding in early detection and prevention.
 
 # Data
 Data is from: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset
@@ -11,19 +11,19 @@ Data is from: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-data
 - Class Imbalance: 7% of samples are positive for having had a stroke
 
 # Exploratory Analyses
-![Age vs. Stroke History](age_stroke.png)
+<img src="https://github.com/adey4/Stroke-Predictions/blob/main/age_stroke.png" width=500 height=400>
 
 Those who have had a stroke are ~26 years older than those who have not, on average.
 <br />
 <br />
 <br />
 
-![Marriage vs. Stroke History](marriage_stroke.png)
+<img src="https://github.com/adey4/Stroke-Predictions/blob/main/marriage_stroke.png" width=500 height=400>
 
 Those who have been married are ~4x more likely to have had a stroke than those who have not been married, on average.
 
 # Final Model
-XGBClassifier with eta = 0.3, lambda = 1, max_depth = 5, and min_child_weight = 2
+XGBClassifier with `eta = 0.3`, `lambda = 1`, `max_depth = 5`, and `min_child_weight = 2`
 
 # Model Evaluation
 The final model was chosen to maximize recall, since false negatives are worse than false positives when predicting stroke. False negatives may lead to a lack of proper treatment for those who might be at risk for stroke, while false positives only lead to an unnecessary checkup.
