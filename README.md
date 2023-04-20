@@ -10,7 +10,7 @@ Data is from: https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-data
 - 5110 observations
 - Class Imbalance: 7% of samples are positive for having had a stroke
 
-# Insights
+# Exploratory Analyses
 ![Age vs. Stroke History](age_stroke.png)
 
 Those who have had a stroke are ~26 years older than those who have not, on average.
